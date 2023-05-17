@@ -1,0 +1,14 @@
+{% extends "basicApp/base.html" %}
+
+    {% block add_here %}
+
+        <div class="jumbotron">
+            <h1>Welcome to my Home Page</h1>
+            {% if user.is_authenticated %}
+                <h2>Welcome {{ user.username }}!</h2>
+            {% else %}
+                <h2>Welcome to the site!</h2>
+        </div>
+        {% endif %}
+
+ {% endblock %}
