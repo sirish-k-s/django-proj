@@ -28,7 +28,7 @@ urlpatterns = [
     path('test/', views.TestPage.as_view(), name='test'),
     path('thanks/', views.ThanksPage.as_view(), name='thanks'),
     path('posts/', include('posts.urls', namespace= 'posts')),
-    path('groups/', include('Groups.urls', namespace= 'groups')),
+    path('groups/', include('groups.urls', namespace= 'groups')),
 ]
 
 # if settings.DEBUG:
